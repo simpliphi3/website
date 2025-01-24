@@ -85,6 +85,20 @@ main {
     padding: 2rem;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.contact-form {
+    flex: 1;
+}
+
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -127,6 +141,9 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 30%; /* Reduced width */
+    display: block;
+    margin: 0 auto; /* Centered button */
 }
 
 footer {
@@ -137,4 +154,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.spacer {
+    height: 3rem; /* Extra space */
 }
