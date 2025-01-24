@@ -13,8 +13,8 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -57,32 +57,41 @@
             <p>At SimpliPhi, we believe that Legal Operations should empower organizations—not overwhelm them. That’s why we specialize in creating streamlined, scalable solutions that bring clarity, efficiency, and measurable results to legal teams across industries. With deep expertise in both strategic and tactical Legal Operations, we simplify complex processes and enable legal departments to unlock their full potential.</p>
         </section>
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or ready to get started? We’re here to help.</p>
-            <p>Reach out to explore how SimpliPhi can deliver tailored solutions to meet your legal operations needs.</p>
-            <form id="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or ready to get started? We’re here to help.</p>
+                    <p>Reach out to explore how SimpliPhi can deliver tailored solutions to meet your legal operations needs.</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name"><strong>First Name</strong> (Required):</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name"><strong>Last Name</strong> (Required):</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><strong>Email</strong> (Required):</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><strong>Message</strong> (Required):</label>
+                            <textarea id="message" name="message" required placeholder="Tell us what you'd like to discuss with our team"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required placeholder="Tell us what you'd like to discuss with our team"></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
+            </div>
         </section>
     </main>
+    <section class="spacer"></section>
     <footer>
         <p>&copy; 2025 Our Company. All rights reserved.</p>
     </footer>
