@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Layout */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -6,28 +6,32 @@ body {
     box-sizing: border-box;
 }
 
-/* Header Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Header */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: #387D54;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    border-bottom: 5px solid #28583f;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    margin: 0;
+    gap: 1rem;
 }
 
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -35,48 +39,69 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-color: #f4f4f4;
-    padding: 2rem;
+    background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
+    padding: 1.5rem;
     text-align: center;
     animation: fadeIn 2s ease;
 }
 
 .hero h1 {
-    color: #387D54;
-    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.hero p {
-    color: #333;
-    font-size: 1.2rem;
+/* Forms and Containers */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Buttons */
 .cta-button {
     background-color: #387D54;
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 4px;
-    text-decoration: none;
+    border-radius: 50px;
     font-size: 1rem;
-    margin-top: 1rem;
-    display: inline-block;
-    transition: background-color 0.3s;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #28583f;
+    transform: scale(1.1);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #387D54;
+    background: linear-gradient(135deg, #387D54, #28583f);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     border-top: 5px solid #28583f;
-    position: static;
-    width: 100%;
 }
 
 /* Animations */
