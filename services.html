@@ -10,7 +10,7 @@
     <style>
         .services-hero {
             background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
-            padding: 3rem;
+            padding: 2rem; /* Adjusted height to match 1:1.618 ratio */
             text-align: center;
             animation: fadeIn 2s ease;
         }
@@ -43,6 +43,17 @@
             color: #444;
         }
 
+        .cta-section {
+            text-align: center;
+            margin: 2rem 0; /* Added spacing above footer */
+        }
+
+        .cta-section p {
+            font-family: 'Montserrat', sans-serif;
+            color: #444;
+            font-size: 0.9rem; /* Slightly smaller than service descriptions */
+        }
+
         .cta-button {
             background-color: #387D54;
             color: white;
@@ -65,7 +76,7 @@
             background: linear-gradient(135deg, #387D54, #28583f);
             color: #fff;
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0; /* Reduced height by 50% */
             border-top: 5px solid #28583f;
             position: static;
             width: 100%;
