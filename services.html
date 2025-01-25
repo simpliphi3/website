@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description" content="Explore the tailored legal operations services offered by SimpliPhi Management LLC to help organizations thrive.">
     <style>
-        /* Section Background */
         .services-hero {
             background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
             padding: 3rem;
@@ -19,6 +18,9 @@
         .services-section {
             background: #f9f9f9;
             padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
         }
 
         .service-card {
@@ -26,7 +28,6 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 1.5rem;
-            margin: 1rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             animation: slideInUp 1.5s ease;
         }
@@ -60,9 +61,14 @@
             transform: scale(1.1);
         }
 
-        @keyframes slideInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        footer {
+            background: linear-gradient(135deg, #387D54, #28583f);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 5px solid #28583f;
+            position: static;
+            width: 100%;
         }
     </style>
 </head>
@@ -104,6 +110,19 @@
                 <h3>Change Management</h3>
                 <p>Ensure smooth transitions with tailored strategies and comprehensive training for your team.</p>
             </div>
+            <div class="service-card">
+                <h3>Strategic Outside Counsel Management</h3>
+                <p>Maximize the value of your external legal partnerships through cost and performance management.</p>
+            </div>
+            <div class="service-card">
+                <h3>Strategic Planning</h3>
+                <p>Develop a forward-looking strategy for your legal department with a focus on measurable outcomes.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <p>Want to learn more about how SimpliPhi can help your legal operations? Reach out to us today!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
         </section>
     </main>
 
