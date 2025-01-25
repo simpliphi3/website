@@ -8,55 +8,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description" content="Learn about SimpliPhi Management LLC, our mission, values, and expertise in legal operations consulting.">
     <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #387D54;
+            color: #fff;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .about-hero {
             background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
-            padding: 3rem;
+            padding: 1.5rem;
             text-align: center;
             animation: fadeIn 2s ease;
         }
 
-        .about-section {
-            background: #f9f9f9;
-            padding: 2rem 1rem;
+        footer {
+            background: linear-gradient(135deg, #387D54, #28583f);
+            color: #fff;
             text-align: center;
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: slideInUp 1.5s ease;
-        }
-
-        .about-content h2 {
-            font-family: 'Playfair Display', serif;
-            color: #28583f;
-            margin-bottom: 1rem;
-        }
-
-        .about-content p {
-            font-family: 'Montserrat', sans-serif;
-            color: #444;
-            line-height: 1.8;
+            padding: 1rem 0; /* Reduced height by 50% */
+            border-top: 5px solid #28583f;
+            position: static;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>SimpliPhi Management LLC</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>SimpliPhi Management LLC</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -65,20 +72,15 @@
             <p>Discover the mission, values, and expertise driving SimpliPhi Management LLC.</p>
         </section>
 
-        <section class="about-section">
-            <div class="about-content">
-                <h2>Our Mission</h2>
-                <p>At SimpliPhi Management LLC, our mission is to simplify and optimize legal operations, empowering organizations to focus on strategic goals while achieving measurable results. We believe in delivering clarity and precision to help legal departments unlock their full potential.</p>
+        <section class="about-content">
+            <h2>Our Mission</h2>
+            <p>At SimpliPhi Management LLC, our mission is to simplify and optimize legal operations, empowering organizations to focus on strategic goals while achieving measurable results. We believe in delivering clarity and precision to help legal departments unlock their full potential.</p>
 
-                <h2>Our Values</h2>
-                <p>Guided by our core values of integrity, collaboration, innovation, and generosity, we are committed to creating streamlined, scalable solutions that make a tangible impact on your organization.</p>
+            <h2>Our Values</h2>
+            <p>Guided by our core values of integrity, collaboration, innovation, and generosity, we are committed to creating streamlined, scalable solutions that make a tangible impact on your organization.</p>
 
-                <h2>Our Expertise</h2>
-                <p>With a deep understanding of both strategic and tactical legal operations, we bring decades of experience to every engagement. From legal technology implementation to workflow optimization, we pride ourselves on delivering tailored solutions that drive results.</p>
-
-                <h2>Your Success is Our Priority</h2>
-                <p>Partner with SimpliPhi to transform your legal operations. Together, we’ll pave the way to efficiency, collaboration, and measurable success.</p>
-            </div>
+            <h2>Our Expertise</h2>
+            <p>With a deep understanding of both strategic and tactical legal operations, we bring decades of experience to every engagement. From legal technology implementation to workflow optimization, we pride ourselves on delivering tailored solutions that drive results.</p>
         </section>
     </main>
 
