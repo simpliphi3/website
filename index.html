@@ -3,81 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpliPhi Management LLC - Home</title>
+    <title>SimpliPhi Management LLC</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Welcome to SimpliPhi Management LLC, providing expert legal operations consulting solutions for businesses worldwide.">
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: #387D54;
-            color: #fff;
-        }
-
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 1rem;
-        }
-
-        header nav ul li {
-            margin: 0;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
-            padding: 1.5rem;
-            text-align: center;
-            animation: fadeIn 2s ease;
-        }
-
-        .hero h1 {
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            background: linear-gradient(135deg, #387D54, #28583f);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0; /* Reduced height by 50% */
-            border-top: 5px solid #28583f;
-            position: static;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>SimpliPhi Management LLC</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #3A5BAF; color: white;">
+            <div style="font-size: 1.5rem; font-family: 'Playfair Display', serif;">
+                <span style="color: #3A5BAF;">Simpli</span><span style="color: #387D54;">Phi</span> Management LLC
+            </div>
+            <nav>
+                <ul style="list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;">
+                    <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+                    <li><a href="services.html" style="color: white; text-decoration: none; font-weight: bold;">Services</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <main>
-        <section class="hero">
+        <section class="hero" style="background: url('abstract-pattern.png') no-repeat center center/cover;">
             <h1>Simplifying Legal Operations</h1>
-            <p>Empowering organizations with tailored solutions to streamline workflows and achieve strategic goals.</p>
+            <p>Simplifying complexity with precision and empowering your success.</p>
             <a href="contact.html" class="cta-button">Get in Touch</a>
         </section>
-    </main>
 
+        <section style="padding: 2rem; text-align: center;">
+            <h2>Our Core Services</h2>
+            <div style="display: flex; justify-content: center; gap: 2rem;">
+                <ul style="list-style: none; text-align: left;">
+                    <li>Legal Technology Implementation</li>
+                    <li>Workflow Optimization</li>
+                    <li>Data-Driven Insights</li>
+                </ul>
+                <ul style="list-style: none; text-align: left;">
+                    <li>Change Management</li>
+                    <li>Strategic Outside Counsel Management</li>
+                    <li>Strategic Planning</li>
+                </ul>
+            </div>
+            <a href="services.html" class="cta-button" style="margin-top: 1rem; display: inline-block;">Explore Services</a>
+        </section>
+
+        <section style="padding: 2rem; text-align: center;">
+            <h2>Explore Our Website</h2>
+            <div style="display: flex; justify-content: center; gap: 2rem;">
+                <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: white;">
+                    <h3><a href="services.html" style="text-decoration: none; color: #3A5BAF;">Our Services</a></h3>
+                    <p>Discover how we simplify legal operations for organizations of all sizes.</p>
+                </div>
+                <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: white;">
+                    <h3><a href="about.html" style="text-decoration: none; color: #3A5BAF;">About Us</a></h3>
+                    <p>Learn about our mission, values, and expertise in solving complex challenges.</p>
+                </div>
+                <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: white;">
+                    <h3><a href="contact.html" style="text-decoration: none; color: #3A5BAF;">Contact Us</a></h3>
+                    <p>We’re here to help. Reach out today to discuss your needs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="container">
             <p>&copy; 2025 SimpliPhi Management LLC. All rights reserved.</p>
