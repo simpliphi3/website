@@ -7,10 +7,46 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3A5BAF, #28583f);
+            color: white;
+        }
+        .header-title {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .header-title span:first-child {
+            color: #FFFFFF; /* White for contrast */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .header-title span:last-child {
+            color: #DCA85D; /* Gold for an accent */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav ul li a:hover {
+            color: #DCA85D;
+        }
         .services-hero {
             background: url('abstract-pattern-services.png') no-repeat center center/cover;
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 2rem 1rem; /* Adjusted height */
             color: white;
         }
         .services-hero h1 {
@@ -27,6 +63,9 @@
             padding: 2rem;
             background: #f1f1f1;
             text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
         }
         .services-card {
             padding: 1rem;
@@ -34,7 +73,6 @@
             border-radius: 8px;
             background: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 1rem 0;
             transition: transform 0.3s;
         }
         .services-card:hover {
@@ -46,6 +84,34 @@
             color: #3A5BAF;
         }
         .services-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .engagement-section {
+            padding: 2rem;
+            background: #e9f5e6;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .engagement-card {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .engagement-card:hover {
+            transform: scale(1.05);
+        }
+        .engagement-card h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            color: #387D54;
+        }
+        .engagement-card p {
             font-size: 1rem;
             color: #333;
         }
@@ -115,6 +181,21 @@
             <div class="services-card">
                 <h3>Strategic Planning</h3>
                 <p>Achieve your long-term objectives by aligning resources with strategic goals and priorities.</p>
+            </div>
+        </section>
+
+        <section class="engagement-section">
+            <div class="engagement-card">
+                <h3>Project Driven</h3>
+                <p>Engage with us for specific projects where our expertise can drive impactful results.</p>
+            </div>
+            <div class="engagement-card">
+                <h3>Retainer Model</h3>
+                <p>Benefit from ongoing support and expert guidance tailored to your needs.</p>
+            </div>
+            <div class="engagement-card">
+                <h3>Ad Hoc</h3>
+                <p>Access our expertise on a flexible, as-needed basis to tackle immediate challenges.</p>
             </div>
         </section>
 
