@@ -1,75 +1,93 @@
+/* General Layout */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
 /* Header */
 .header {
-    background: linear-gradient(135deg, #3A5BAF, #28583f);
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #3A5BAF, #28583f);
     color: white;
 }
-
 .header-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
-
+.header-title span:first-child {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.header-title span:last-child {
+    color: #DCA85D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
 .nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
-
 .nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
-
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #3A5BAF, #28583f);
-    padding: 1rem 2rem;
-    text-align: center;
-    color: white;
+.nav ul li a:hover {
+    color: #DCA85D;
 }
 
 /* Hero Section */
 .hero-main {
-    background: url('images/abstract-pattern-main.png') no-repeat center center/cover;
-    padding: 4rem 2rem;
+    background: url('abstract-pattern-main.png') no-repeat center center/cover;
+    padding: 2rem 1rem;
     text-align: center;
     color: white;
 }
-
-.hero-main h1 {
+.hero-services {
+    background: url('abstract-pattern-services.png') no-repeat center center/cover;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+.hero-about {
+    background: url('abstract-pattern-about.png') no-repeat center center/cover;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+.hero-contact {
+    background: url('abstract-pattern-contact.png') no-repeat center center/cover;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
-.hero-main p {
+.hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: #DCA85D;
-    color: #28583f;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #FFD27F;
-    transform: scale(1.05);
-}
 
 /* Services Section */
 .services-summary {
@@ -77,12 +95,10 @@ footer {
     background: #f9f9f9;
     text-align: center;
 }
-
 .services-summary h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -90,7 +106,6 @@ footer {
     list-style: none;
     padding: 0;
 }
-
 .services-list li {
     background: white;
     padding: 1.5rem;
@@ -98,11 +113,69 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .services-list img {
     width: 40px;
     height: 40px;
     margin-bottom: 1rem;
+}
+
+
+/* Services Cards */
+.services-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.services-card:hover {
+    transform: scale(1.05);
+}
+.services-card img {
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
+}
+
+/* Engagement Cards */
+.engagement-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.engagement-card:hover {
+    transform: scale(1.05);
+}
+.engagement-card img {
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #DCA85D;
+    color: #28583f;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #FFD27F;
+    transform: scale(1.05);
 }
 
 /* Call-to-Action Section */
@@ -116,4 +189,13 @@ footer {
 .cta-section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #3A5BAF, #28583f);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 5px solid #28583f;
 }
