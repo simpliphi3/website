@@ -3,87 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpliPhi Management LLC - About</title>
+    <title>SimpliPhi Management LLC | About</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Learn about SimpliPhi Management LLC, our mission, values, and expertise in legal operations consulting.">
     <style>
-        header {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
-            background-color: #387D54;
-            color: #fff;
+            background: linear-gradient(135deg, #3A5BAF, #28583f);
+            color: white;
         }
-
-        header nav ul {
+        .header-title {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .header-title span:first-child {
+            color: #FFFFFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .header-title span:last-child {
+            color: #DCA85D;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .nav ul {
             list-style: none;
+            display: flex;
+            gap: 2rem;
             margin: 0;
             padding: 0;
-            display: flex;
-            gap: 1rem;
         }
-
-        header nav ul li {
-            margin: 0;
-        }
-
-        header nav ul li a {
-            color: #fff;
+        .nav ul li a {
+            color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
-
-        .about-hero {
-            background: linear-gradient(135deg, #d4ebdd, #e9f5e6);
-            padding: 1.5rem;
+        .nav ul li a:hover {
+            color: #DCA85D;
+        }
+        .hero {
+            background: url('abstract-pattern-about.png') no-repeat center center/cover;
             text-align: center;
-            animation: fadeIn 2s ease;
-        }
-
-        .about-section {
-            background: #f9f9f9;
             padding: 2rem 1rem;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .section {
+            padding: 2rem;
+            background: #f9f9f9;
             text-align: center;
         }
-
-        .about-container {
-            max-width: 800px;
-            margin: 0 auto;
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .bio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
             padding: 2rem;
             background: white;
-            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-
-        .about-container h2 {
-            font-family: 'Playfair Display', serif;
-            color: #28583f;
-            margin-bottom: 1rem;
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
         }
-
-        .about-container p {
-            font-family: 'Montserrat', sans-serif;
-            color: #444;
-            line-height: 1.8;
-        }
-
-        footer {
-            background: linear-gradient(135deg, #387D54, #28583f);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0; /* Reduced height by 50% */
-            border-top: 5px solid #28583f;
-            position: static;
-            width: 100%;
+        .bio-text {
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SimpliPhi Management LLC</h1>
-        <nav>
+    <header class="header">
+        <div class="header-title">
+            <span>Simpli</span><span>Phi</span> Management LLC
+        </div>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -94,24 +110,26 @@
     </header>
 
     <main>
-        <section class="about-hero">
-            <h1>About SimpliPhi</h1>
-            <p>Discover the mission, values, and expertise driving SimpliPhi Management LLC.</p>
+        <section class="hero">
+            <h1>About Us</h1>
+            <p>Learn more about SimpliPhi Management LLC and what drives us.</p>
         </section>
 
-        <section class="about-section">
-            <div class="about-container">
-                <h2>Our Mission</h2>
-                <p>At SimpliPhi Management LLC, our mission is to simplify and optimize legal operations, empowering organizations to focus on strategic goals while achieving measurable results. We believe in delivering clarity and precision to help legal departments unlock their full potential.</p>
+        <section class="section">
+            <h2>Who We Are</h2>
+            <p>SimpliPhi Management LLC is dedicated to simplifying legal operations through innovative and efficient solutions. Our mission is to empower organizations to overcome complex challenges with clarity and precision.</p>
+        </section>
 
-                <h2>Our Values</h2>
-                <p>Guided by our core values of integrity, collaboration, innovation, and generosity, we are committed to creating streamlined, scalable solutions that make a tangible impact on your organization.</p>
+        <section class="section">
+            <h2>Mission and Vision</h2>
+            <p>Our mission is to streamline legal operations by delivering tailored solutions that drive measurable results. We envision a world where legal departments operate at peak efficiency, unlocking their full potential.</p>
+        </section>
 
-                <h2>Our Expertise</h2>
-                <p>With a deep understanding of both strategic and tactical legal operations, we bring decades of experience to every engagement. From legal technology implementation to workflow optimization, we pride ourselves on delivering tailored solutions that drive results.</p>
-
-                <h2>Your Success is Our Priority</h2>
-                <p>Partner with SimpliPhi to transform your legal operations. Together, we’ll pave the way to efficiency, collaboration, and measurable success.</p>
+        <section class="bio">
+            <img src="KMM-photo.jpg" alt="Your Name">
+            <div class="bio-text">
+                <h2>Meet [Your Name]</h2>
+                <p>[Your Name] is the founder of SimpliPhi Management LLC, bringing over [X years] of experience in legal operations, project management, and strategic planning. With a passion for simplifying processes, [Your Name] has worked with organizations of all sizes to drive success.</p>
             </div>
         </section>
     </main>
