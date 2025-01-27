@@ -69,38 +69,64 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Form Section */
-.form-section {
-    padding: 2rem;
-    background: #f9f9f9;
-    text-align: center;
+/* Services Section */
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
 }
-.form-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.services-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.services-list li img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
 }
-.form-group {
-    margin-bottom: 1rem;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
+
+/* Services Cards */
+.services-card {
+    padding: 1rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.services-card:hover {
+    transform: scale(1.05);
+}
+.services-card img {
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
+}
+
+/* Engagement Cards */
+.engagement-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.engagement-card:hover {
+    transform: scale(1.05);
+}
+.engagement-card img {
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
 }
 
 /* Buttons */
