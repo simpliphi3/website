@@ -1,145 +1,79 @@
-/* General Layout */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #3A5BAF, #28583f);
-    color: white;
-}
-.header-title {
-    font-size: 1.8rem;
-    font-family: 'Playfair Display', serif;
-}
-.header-title span:first-child {
-    color: #FFFFFF;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-.header-title span:last-child {
-    color: #DCA85D;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-}
-.nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-.nav ul li a:hover {
-    color: #DCA85D;
-}
-
 /* Hero Section */
-.hero {
-    background: url('abstract-pattern.png') no-repeat center center/cover;
+.hero-contact {
+    background: url('images/abstract-pattern-contact.png') no-repeat center center/cover;
+    padding: 3rem 1rem;
     text-align: center;
-    padding: 2rem 1rem;
     color: white;
 }
-.hero h1 {
+
+.hero-contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.hero p {
+
+.hero-contact p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Services Section */
-.services-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
+/* Form Section */
+.form-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
 }
-.services-list li {
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-.services-list li img {
-    width: 30px;
-    height: 30px;
-    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
+    margin-bottom: 1.5rem;
 }
 
-/* Services Cards */
-.services-card {
-    padding: 1rem;
+.form-group img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.form-group label {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 2;
+    padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-.services-card:hover {
-    transform: scale(1.05);
-}
-.services-card img {
-    margin-bottom: 1rem;
-    width: 40px;
-    height: 40px;
-    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
+    border-radius: 4px;
+    width: 100%;
 }
 
-/* Engagement Cards */
-.engagement-card {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f1f1f1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-.engagement-card:hover {
-    transform: scale(1.05);
-}
-.engagement-card img {
-    margin-bottom: 1rem;
-    width: 40px;
-    height: 40px;
-    filter: grayscale(100%) brightness(0) sepia(1) hue-rotate(180deg) saturate(500%) brightness(85%);
-}
-
-/* Buttons */
 .cta-button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
     background-color: #DCA85D;
     color: #28583f;
-    padding: 0.6rem 1.2rem;
     border: none;
     border-radius: 50px;
+    text-align: center;
     font-size: 1rem;
-    text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .cta-button:hover {
     background-color: #FFD27F;
     transform: scale(1.05);
@@ -147,9 +81,9 @@ body {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #3A5BAF, #28583f);
-    color: #fff;
+    margin-top: 3rem;
     text-align: center;
     padding: 1rem 0;
-    border-top: 5px solid #28583f;
+    background: linear-gradient(135deg, #3A5BAF, #28583f);
+    color: white;
 }
