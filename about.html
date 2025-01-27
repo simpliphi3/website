@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpliPhi Management LLC | About</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-about {
+            background: url('abstract-pattern-about.png') no-repeat center center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .bio-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .bio-section img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-section div {
+            text-align: left;
+        }
+
+        .bio-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .bio-section p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -22,53 +75,30 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>About Us</h1>
-            <p>Learn more about SimpliPhi Management LLC and what drives us.</p>
-        </section>
-
-        <section class="section">
-            <h2>Who We Are</h2>
-            <p>SimpliPhi Management LLC is dedicated to simplifying legal operations through innovative and efficient solutions. Our mission is to empower organizations to overcome complex challenges with clarity and precision.</p>
-        </section>
-
-        <section class="section">
-            <h2>Mission and Vision</h2>
-            <p>Our mission is to streamline legal operations by delivering tailored solutions that drive measurable results. We envision a world where legal departments operate at peak efficiency, unlocking their full potential.</p>
-        </section>
-
-        <section class="bio">
-            <img src="KMM-photo.jpg" alt="Your Name">
-            <div class="bio-text">
-                <h2>Meet [Your Name]</h2>
-                <p>[Your Name] is the founder of SimpliPhi Management LLC, bringing over [X years] of experience in legal operations, project management, and strategic planning. With a passion for simplifying processes, [Your Name] has worked with organizations of all sizes to drive success.</p>
+        <section class="hero hero-about">
+            <div class="container">
+                <h1>About SimpliPhi</h1>
+                <p>Our mission is to streamline legal operations with precision and clarity.</p>
             </div>
         </section>
 
-        <section class="values">
-            <h2>Our Core Values</h2>
-            <ul class="services-list">
-                <li>
-                    <img src="icons/integrity.png" alt="Integrity Icon">
-                    Integrity
-                </li>
-                <li>
-                    <img src="icons/innovation.png" alt="Innovation Icon">
-                    Innovation
-                </li>
-                <li>
-                    <img src="icons/collaboration.png" alt="Collaboration Icon">
-                    Collaboration
-                </li>
-                <li>
-                    <img src="icons/results.png" alt="Results Icon">
-                    Results-Driven
-                </li>
-            </ul>
+        <section class="about-section">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <p>At SimpliPhi, we believe in empowering organizations by simplifying complex legal processes. Our tailored solutions ensure efficiency, cost-effectiveness, and strategic alignment with organizational goals.</p>
+            </div>
+        </section>
+
+        <section class="bio-section">
+            <img src="KMM-photo.jpg" alt="Photo of KMM">
+            <div>
+                <h3>About Me</h3>
+                <p>Hello! I’m [Your Name], the founder of SimpliPhi Management LLC. With over a decade of experience in legal operations, I specialize in driving strategic initiatives, optimizing workflows, and implementing scalable solutions that deliver measurable results. My passion lies in simplifying complexity and empowering organizations to succeed.</p>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 SimpliPhi Management LLC. All rights reserved.</p>
         </div>
